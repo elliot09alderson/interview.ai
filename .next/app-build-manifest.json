@@ -30,16 +30,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/dashboard/interview/[interviewId]/test/page.js"
-    ],
-    "/(auth)/sign-in/[[...sign-in]]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(auth)/sign-in/[[...sign-in]]/page.js"
-    ],
-    "/dashboard/interview/[interviewId]/start/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/interview/[interviewId]/start/page.js"
     ]
   }
 }

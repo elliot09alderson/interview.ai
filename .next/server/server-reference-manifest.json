@@ -17,13 +17,18 @@
         "app/dashboard/interview/[interviewId]/test/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CDANEES%5C%5CDownloads%5C%5Cproject%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f2ef67139871881826ced860f79d523199a70f915%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/_not-found/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CDANEES%5C%5CDownloads%5C%5Cproject%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%5B%227f2ef67139871881826ced860f79d523199a70f915%22%2C%22invalidateCacheAction%22%5D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
         "app/dashboard/page": "action-browser",
         "app/dashboard/interview/[interviewId]/page": "action-browser",
-        "app/dashboard/interview/[interviewId]/test/page": "action-browser"
+        "app/dashboard/interview/[interviewId]/test/page": "action-browser",
+        "app/_not-found/page": "action-browser"
       }
     }
   },

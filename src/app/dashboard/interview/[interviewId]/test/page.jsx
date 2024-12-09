@@ -1,29 +1,30 @@
 "use client";
 
-import React from "react";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
-
+import React, { useEffect } from "react";
+import useSpeechToText from "react-hook-speech-to-text";
 const SpeechTest = () => {
   const {
-    transcript,
-    listening,
-    resetTranscript,
-    browserSupportsSpeechRecognition,
-  } = useSpeechRecognition();
+    error,
+    interimResult,
+    isRecording,
+    results,
+    startSpeechToText,
+    stopSpeechToText,
+  } = useSpeechToText({
+    continuous: true, // Try disabling continuous recording
+    useLegacyResults: false,
+  });
 
-  if (!browserSupportsSpeechRecognition) {
-    return <p>Browser doesn't support speech recognition.</p>;
-  }
+useEffect(()=>{
+  console.log(results)
+},[results])
 
   return (
     <div>
-      <p>Microphone: {listening ? "on" : "off"}</p>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
-      <button onClick={resetTranscript}>Reset</button>
-      <p>Transcript: {transcript}</p>
+      <p>Microphone: {isRecording ? "on" : "off"}</p>
+      <button onClick={startSpeechToText}>Start</button>
+      <button onClick={stopSpeechToText}>Stop</button>
+      <p>Transcript: {results[0]}</p>
     </div>
   );
 };

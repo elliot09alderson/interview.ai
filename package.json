@@ -31,7 +31,7 @@
     "react-speech-recognition": "^3.10.0",
     "react-webcam": "^7.2.0",
     "regenerator-runtime": "^0.14.1",
-    "shadcn-ui": "^0.9.3",
+    "shadcn-ui": "^0.9.5",
     "sonner": "^1.7.0",
     "speech-to-text": "^2.9.1",
     "tailwind-merge": "^2.5.5",
